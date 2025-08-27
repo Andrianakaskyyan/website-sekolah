@@ -1,0 +1,183 @@
+/* Reset sederhana */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  transition: background-color 0.4s, color 0.4s;
+  min-height: 2000px; /* agar ada scroll */
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Header */
+header {
+  background: #640D5F;
+  color: white;
+  padding: 20px 0;
+}
+
+header h1 {
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 10px;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  background: url(smk.jpg) no-repeat center center/cover;
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 48px;
+}
+
+.hero p {
+  font-size: 24px;
+}
+
+.hero .btn {
+  background: #ffcc00;
+  padding: 10px 20px;
+  margin-top: 20px;
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* Content Sections */
+.content {
+  padding: 40px 0;
+  background-color: white;
+}
+
+.content.gray {
+  background-color: #eaeaea;
+}
+
+.content h3 {
+  margin-bottom: 20px;
+}
+
+.content ul {
+  list-style: square;
+  padding-left: 20px;
+}
+
+/* Footer */
+footer {
+  background: #640D5F;
+  color: #aaa;
+  text-align: center;
+  padding: 15px 0;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #121212 !important;
+  color: #eee !important;
+}
+
+body.dark-mode header {
+  background-color: #3a0e55 !important;
+}
+
+body.dark-mode footer {
+  background-color: #3a0e55 !important;
+  color: #ccc !important;
+}
+
+body.dark-mode nav ul li a {
+  color: #eee !important;
+}
+
+body.dark-mode .hero .btn {
+  background-color: #ffd633 !important;
+  color: #000 !important;
+}
+
+body.dark-mode .content.gray {
+  background-color: #2c2c2c !important;
+}
+
+body.dark-mode .content {
+  background-color: #1f1f1f !important;
+}
+
+/* Tombol di pojok kanan atas */
+#toggleMode, #runtuhBtn {
+  position: fixed;
+  right: 20px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  z-index: 1000;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+#toggleMode {
+  top: 20px;
+  background: #640D5F;
+  margin-bottom: 5px;
+}
+
+#runtuhBtn {
+  top: 70px;
+  background: #dc3545;
+}
+
+/* Tombol scroll to top */
+#scrollTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 22px;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  transition: background-color 0.3s;
+}
+#scrollTopBtn:hover {
+  background-color: #218838;
+}
